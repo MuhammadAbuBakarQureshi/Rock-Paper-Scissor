@@ -153,22 +153,23 @@ function draw(Message, computerChoice){
 
 // sound effects
 
+let winAudio = new Audio("Audio/win.wav");
+let loseAudio = new Audio("Audio/lose.mp3");
+let drawAudio = new Audio("Audio/draw.wav");
+
 
 function winSound(){
 
-  let audio = new Audio("Audio/win.wav");
-  audio.play();
+  winAudio.play();
 }
 
 function loseSound(){
 
-  let audio = new Audio("Audio/lose.mp3")
-  audio.play();
+  loseAudio.play();
 }
 
 
 function drawSound() {
  
-  let audio = new Audio("Audio/draw.wav");
-  audio.play();
+  drawAudio.play();
 }
