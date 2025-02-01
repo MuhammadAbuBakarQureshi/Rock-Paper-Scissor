@@ -70,13 +70,9 @@ function computerMove() {
  
   let computerChoice = Math.floor(Math.random() * 3) + 1;
 
-  if (computerChoice == 1) {
-    return "rock";
-  } else if (computerChoice == 2) {
-    return "paper";
-  } else if (computerChoice == 3) {
-    return "scissor";
-  }
+  let options = ["rock", "paper", "scissor"];
+
+  return options[computerChoice - 1];
 }
 
 
