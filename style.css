@@ -1,0 +1,188 @@
+* {
+
+    margin: 0%;
+    padding: 0%;
+    user-select: none;
+}
+
+body {
+
+    background-color: #F4F9F9;
+}
+
+
+/*Header*/
+
+.header {
+
+    background-color: #5A7D7C;
+    color: #F8F9FA;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+
+    color: whitesmoke;
+    font-family: Courier;
+}
+
+
+/* Game container */
+
+.container {
+
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5vw;
+}
+
+.choice {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.choice:hover {
+
+    background-color: black;
+
+    cursor: pointer;
+}
+
+.choice:active {
+
+    transform: scale(1.1);
+}
+
+/*Images*/
+
+img {
+
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+
+
+
+/* Score Board */
+
+
+.scoreboard {
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    color: #344E41;
+}
+
+.player {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* Reuslt */
+
+.result_container {
+
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.result {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bolder;
+    font-size: 1.5em;
+
+    height: 70px;
+    width: 300px;
+
+    background-color: #384d4d;
+    color: #F8F9FA;
+
+    border-radius: 20px;
+}
+
+
+.won {
+
+
+    background-color: #D4E157;
+    color: #344E41;
+    border: 2px solid #9ACD32;
+}
+
+
+.lose {
+
+    background-color: #FFCDD2;
+    color: #D32F2F;
+    border: 2px solid #E57373;
+}
+
+
+.draw {
+
+    background-color: #FFE0B2;
+    color: #FF8C42;
+    border: 2px solid #FFD54F;
+}
+
+
+/* Repsonsive */
+
+@media (max-width: 470px) {
+
+    .container {
+
+        gap: 2vw;
+    }
+
+    .choice {
+
+        height: 115px;
+        width: 115px;
+    }
+
+    img {
+
+        height: 110px;
+        width: 110px;
+    }
+
+    .result {
+
+        font-size: 1em;
+    }
+}
