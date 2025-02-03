@@ -46,10 +46,9 @@ choices.forEach((choice) => {
 
 function checkWinner(){
     
+  let computerChoice = computerMove();
 
     for (let patterns of winningPatterns) {
-    
-      let computerChoice = computerMove();
 
         if (selectedChoice === patterns[0] && computerChoice === patterns[1]) {
 
